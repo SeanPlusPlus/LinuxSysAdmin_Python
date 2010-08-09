@@ -2,15 +2,25 @@
 #sysInfo.py
 #A system info gathering script
 
-
 import subprocess
 
-uname = "uname"
-uname_arg = "-a"
-print "Gathering system information with %s command:\n" % uname
-subprocess.call([uname, uname_arg])
+def uname_func():
 
-diskspace = "df"
-diskspace_arg = "-a"
-print "Gathering diskspace information %s command:\n" % diskspace
-subprocess.call([diskspace, diskspace_arg])
+    uname = "uname"
+    uname_arg = "-a"
+    print "Gathering system information with %s command:\n" % uname
+    subprocess.call([uname, uname_arg])
+
+def disk_func():
+
+    diskspace = "df"
+    diskspace_arg = "-a"
+    print "Gathering diskspace information %s command:\n" % diskspace
+    subprocess.call([diskspace, diskspace_arg])
+
+
+def main():
+    uname_func()
+    disk_func()
+
+main()

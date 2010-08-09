@@ -1,5 +1,7 @@
 #!/usr/bin/env python
+#sysInfo.py
 #A system info gathering script
+
 
 import subprocess
 

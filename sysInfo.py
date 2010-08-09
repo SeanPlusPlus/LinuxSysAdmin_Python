@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #sysInfo.py
-#s++
+#Page 14, "Pyton for Unix/Linux Sys Admin"
 #A system info gathering script
 
 import subprocess
